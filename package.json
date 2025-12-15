@@ -7,8 +7,8 @@
   "description": "Deploy Your Frontend In a Single Command",
   "main": "dist/index.js",
   "scripts": {
-    "build": "node build.js",
-    "dev": "NODE_ENV=development node build.js",
+    "build": "node init && node build.js",
+    "dev": "node init && NODE_ENV=development node build.js",
     "prepublishOnly": "npm run build"
   },
   "bin": {
